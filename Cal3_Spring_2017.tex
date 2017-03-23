@@ -1,0 +1,305 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsmath}
+\usepackage[margin=1in]{geometry}
+\linespread{1.6}
+\usepackage{dirtytalk}
+\newtheorem{theorem}{Theorem}
+\newtheorem{defn}{Definition}
+
+\author{DUONG THAN} 
+\title{Calculus 3 }
+\begin{document}
+\maketitle
+\large
+
+\textbf{Text Book} Calculus: Concept $\&$ Context. Author: James Sterwart. \\
+
+\section{Chapter 8: Infinite Sequences and Series}
+
+\subsection{8.1: Sequences}
+
+\begin{enumerate}
+
+	\item Definition: a sequence can be thought of as a list of numbers written in a definite order: 
+	\[
+	a_1,a_2,\dots,a_n,\dots
+	\]
+	where, $a_1$ is the first tern; $a_2$ is the second term; and in general $a_n$ is the $n^{th}$ term. \\
+	Notation: The sequence $\{ a_1, a_2,\dots\}$ is also denoted by 
+	\[
+	\{a_n\} \quad \text{or} \quad \{a_n\}_{n=1}^{\infty}
+	\]
+ 	\item Example
+		\begin{enumerate}
+			\item $\Big\{\dfrac{n}{n+1} \Big\}_{n=1}^{\infty}$
+			
+			\vspace{2in}
+			
+			\item $\Big\{\dfrac{(-1)^n(n+1)}{3^n} \Big\}_{n=1}^{\infty}$
+			
+			\vspace{2in}
+			
+			\item $\Big\{cos\dfrac{n\pi}{6}\Big\}_{n=1}^{\infty}$
+		
+		\end{enumerate}
+		
+		\vspace{4in}
+		
+	\item The limit of sequence: A sequence $\{ a_n\}$ has the limit $L$ and we write 
+	\[
+	\lim_{n \to \infty} a_n = L \quad or \quad a_n \to L \quad as \quad n \to \infty
+	\] 
+	 if we can make the terms $a_n$ as close to L as we like by taking n sufficiently large. If $lim_{n \to \infty}$ exists, we say the sequence \textbf{converges} (or is \textbf{convergent
+	 }). Otherwise, we say the sequence \textbf{diverges} or ( is \textbf{divergent} ).
+	
+	\item Theorem: \\
+	If $\lim_{x \to \infty} f(x) = L$ and $f(n) = a_n$ when n is an integer, then $\lim_{n \to \infty} a_n  = L.$
+		Example: we know that $\lim_{x \to \infty} \dfrac{1}{x^r} = 0$ when $r > 0$, we have 
+		\[
+		\lim_{n \to \infty} \dfrac{1}{n^r} = 0 \quad when \quad r > 0
+		\]
+	
+	\item Squeeze Theorem for Sequences \\
+	If $a_n \leq b_n \leq c_n$ for $n \geq n_0$ and $\lim_{n \to \infty}a_n = \lim_{n \to \infty}c_n = L$, then $\lim_{n \to \infty}b_n = L$.
+	
+	\item Limit Laws for Sequences:\\
+		If $a_n$ and $b_n$ are convergent sequences and  $c$ is a constant, then: \\
+			\begin{enumerate}
+				\item $\lim_{n \to \infty}(a_n + b_n) = \lim_{n \to \infty}a_n + \lim_{n \to \infty}b_n$.
+				\item $\lim_{n \to \infty}a_n - b_n) = \lim_{n \to \infty}a_n - \lim_{n \to \infty}b_n$.	
+				\item $\lim_{n \to \infty}ca_n = c\lim_{n \to \infty}a_n$. \quad \quad $\lim_{n \to \infty}c = c.$
+				\item $\lim_{n \to \infty}(a_nb_n) = \lim_{n \to \infty}a_n \times \lim_{n \to \infty}b_n$.
+				\item $ \lim_{n \to \infty} \dfrac{a_n}{b_n} = \dfrac{\lim_{n \to \infty}a_n}{\lim_{n \to \infty}b_n}.$ if $\lim_{n \to \infty}b_n \neq 0.$
+				\item $\lim_{n \to \infty}a_n^p = \Bigg[ \lim_{n \to \infty}a_n\Bigg]^p$	if $p > 0$ and $a_n > 0$.
+				\end{enumerate}
+		
+	
+	\item Exercises: 
+		\begin{enumerate}
+		
+			\item Use the squeeze theorem to prove: \\
+			if $\lim_{n \to \infty}|a_n| = 0$, then $\lim_{n \to \infty}a_n = 0.$ \\
+			
+			\item Find $\lim_{n \to \infty}\dfrac{n}{n=1}$
+			
+			
+			\item Calculate $\lim_{n \to \infty}\dfrac{\text{ln} n}{n}.$
+			
+			\item Evaluate $\lim_{n \to \infty}\dfrac{(-1)^n}{n}$ if it exists.
+			
+			
+			
+			
+		\end{enumerate}
+	\item Theorem: \\
+			If $\lim_{n \to \infty}a_n = L$, and the function $f$ is continuous at L, then 
+			\[
+			\lim_{n \to \infty} f(a_n) = f(L)
+			\]
+		Example: Find $\lim_{n \to \infty} \text{sin}\Bigg(\dfrac{\pi}{n}\Bigg)$.\\
+		
+	\item Theorem: \\
+		The sequence $r^n$ is convergent if $-1 < r \leq 1$ and divergent for all other values of $r$.
+		\[
+		\lim_{n \to \infty} r^n = \begin{cases} 0 \quad if \quad -1 < r < 1 \\
+									1 \quad if \quad r = 1 \\
+						\end{cases}
+		\]
+	
+	\item Theorem 
+	
+	\item Theorem 
+	
+	\item Increasing and Decreasing sequences: \\
+		A sequence $a_n$ is called \textbf{increasing} if $a_n < a_{n+1}$ for all $n \geq 1$, that is, $a_1 < a_2 < a_3 \dots.$ It is called \textbf{decreasing} if $a_n > a_{n+1}$ for all $n \geq 1$. A sequence is \textbf{monotonic} if it is either increasing or decreasing. \\
+		
+		Example: \\
+			\begin{enumerate}
+				\item The sequence $\Bigg\{ \dfrac{3}{n+5}\Bigg\}$ ... 
+				
+				\item Show that the sequence $a_n = \dfrac{n}{n^2 + 1}$ is decreasing.
+				
+			\end{enumerate} 
+	
+	\item Bounded sequence:\\
+		A sequence $a_n$ is bounded above if there is a number $M$ such that 
+		\[
+		a_n \leq M \quad \text{for all}  \quad n \geq 1
+		\]
+	It is bounded below if there is a number $m$ such that 
+	\[
+	m \leq a_n  \quad \text{for all}  \quad n \geq 1
+	\]
+	
+	If it is bounded above and below, then $a_n $ is a bounded sequence.
+	
+	\item Monotonic Sequence Theorem: Every bounded monotonic sequence is convergent. \\
+		Example: \\
+	
+	\item Practices: problem 4, 5, 8, 11, 15, 21, 25, 49, 51, 37, 38, 50, 52\\
+	
+	\item Homework 12, 18, 20, 30, 22, 42, 50, 52 page 562. 
+\end{enumerate}
+\newpage
+\subsection{8.2: Series}
+\begin{enumerate}
+	\item Series \\
+		If we try to add an infinite sequence $\{a_n\}_{n=1}^{\infty}$ we get \\
+		\[
+		a_1 + a_2 + a_3 + \dots + a_n + \dots
+		\]
+which is called an \textbf{infinite series} or just \textbf{a series} and is denoted
+	\[
+	\sum_{n=1}^{\infty}a_n \quad \quad or \quad \quad \sum a_n
+	\]
+	
+	Example: \\
+	
+	\textbf{Partial Sums}
+	
+	\begin{equation} \label{eq1}
+		\begin{split}
+ s_1 & = a_1 \\
+ s_2 & = a_1 + a_2 \\
+ s_3 & = a_1 + a_2 + a_3 \\
+ 		\end{split}
+	\end{equation} \\
+In general, 
+\[
+s_n = a_1 + a_2 + a_3 + \dots + a_n = \sum_{i=1}^{n}a_i
+\]
+These partial sums form a new sequence $\{ s_n\}$, which may or may not have a limit. 
+
+\item Definition: Given a series $\sum_{n=1}^{\infty} a_n = a_1 + a_2 + \dots ,$ let $s_n$ denote its nth partial sum:
+\[
+s_n = \sum_{i=1}^{n}a_i = a_1 + a_2 + \dots + a_n
+\]
+
+If the sequence $\{ s_n\}$ is convergent and $\lim_{}^{}s_n = s$ exists as a real number, then the series $\sum a_n$ is called convergent and we write: \\
+\[
+a_1 + a_2 + \dots + a_n + \dots = s \quad or \quad \sum_{n=1}^{\infty} a_n = s
+\]
+The number s is called the \textbf{sum} of the series. If the sequence $\{ s_n\}$, is divergent, then the series is called divergent. 
+
+Example: Geometric Series \\
+
+Example: Harmonic Series \\
+
+\item Theorem: \\
+If the series $\{ a_n\}$ is convergent, then $\lim_{n \to \infty}a_n = 0$.\\
+
+Proof: \\ 
+
+Note1: the limit of $\{ s_n\}$ is s, and the limit of $\{ a_n\}$ is 0. 
+
+Note 2: The converse of this theorem is not true. For example, the harmonic series is divergent while the limit of the sequence is 0.\\
+
+
+\item The test for Divergence: \\
+	If $\lim_{n \to \infty}a_n $ does not exist or if $\lim_{n \to \infty}a_n \neq 0$, then the series $\sum_{}^{} a_n $ is divergent. 
+	
+	Example: \\
+	
+\item Theorem: \\
+	If $\sum a_n$ and $\sum b_n$ are convergent series, then so are the series $\sum ca_n$ (where c is a constant), $\sum (a_n + b_n)$, and $\sum (a_n - b_n)$, and 
+		\begin{enumerate}
+		
+			\item $\sum_{n=1}^{\infty} ca_n = c \sum_{n=1}^{\infty}a_n$
+			
+			\item $ \sum_{n=1}^{\infty}(a_n+b_n) = \sum_{n=1}^{\infty}a_n + \sum_{n=1}^{\infty}b_n $
+			
+			\item $\sum_{n=1}^{\infty}(a_n - b_n) = \sum_{n=1}^{\infty}a_n - \sum_{n=1}^{\infty}b_n$
+		\end{enumerate}	
+		
+\item Practices: 13, 30, 17, 31, 37, 41 page 572 \\ 
+
+\item Homework: 14, 28, 16, 36, 32, 34, 42 page 573		
+\end{enumerate}
+
+\newpage
+\subsection{8.3: The Integral and Comparison Tests; Estimating Sums}
+
+\newpage
+\subsection{8.4: Other Convergence Tests}
+
+\newpage
+\subsection{8.5: Power Series}
+
+\newpage
+\subsection{8.6: Representations of Functions  as Power Series}
+
+\newpage
+\subsection{8.7: Taylor and Maclaurin Series}
+
+\newpage
+\section{Chapter 9: Vector and the Geometry of Space}
+
+\subsection{9.1: Three-Dimensional Coordinate Systems}
+	\begin{enumerate}
+		\item Three coordinates axes (x,y,z) form three coordinate planes.\\
+			xy plane, yz plane, xz plane. \\
+			
+			8 octants. The first octant is determined by the positive axes. \\
+			
+			Projection of a point onto planes. \\
+			
+			Example: Graphing equations \\
+			 
+			Example: Describe regions represented by equations\\
+		\item Distance Formula in Three Dimensions \\
+				The distance $|P_1P_2|$ between the points $P_1(x_1,y_1,z_1)$ and $P_2(x_2,y_2,z_2)$ is\\
+				\[
+				|P_1P_2| = \sqrt{(x_2  - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2}
+				\]
+				Example: \\
+		\item Equation of a Sphere \\
+				An equation of a sphere with center $C(h,k,l)$ and radius $r$ is 
+				\[
+				(x-h)^2 + (y-k)^2 + (z-l)^2 = r^2
+				\]
+				In particular, if the center is the origin O, then an equation of the sphere is 
+				\[
+				x^2 + y^2 + z^2 = r^2
+				\]	
+				
+				Example: \\
+				
+				Example: \\
+			\item Practices: 3, 11, 19, 31 \\
+			
+			\item Homework:  2, 12, 14, 26\\
+	\end{enumerate}
+\newpage
+\subsection{9.2: Vectors}
+
+\newpage
+\subsection{9.3: The Dot Product}
+
+\newpage
+\subsection{9.4: The Cross Product}
+
+\newpage
+\subsection{9.5: Equations of Lines and Planes}
+
+\newpage
+\subsection{9.6: Functions and Surfaces}
+
+\newpage
+\subsection{9.7: Cylindrical and Spherical Coordinates}
+
+\newpage
+\section{Chapter 10: Vector Functions}
+
+
+\subsection{10.1: Vector Functions and Space Curves}
+
+\newpage
+\subsection{10.2: Derivatives and Integrals of Vector Functions}
+
+\newpage
+\subsection{10.3: Arc Length and Curvature}
+
+\newpage
+\subsection{10.4: Motion in Space: Velocity and Acceleration}
+
+\end{document}
